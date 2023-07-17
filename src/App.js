@@ -1,7 +1,9 @@
 import React from 'react';
 import { useEffect } from 'react';
 
-import './App.css'
+import './App.css';
+import searchIcon from './search.svg';
+
 
 const API_URL = 'http://www.omdbapi.com/?apikey=f3866de6'
 
@@ -19,8 +21,25 @@ const App = () => {
     }, []);
 
     return (
+        <div className='app'>
+            <h1>Movies</h1>
+            <div className='search'>
+                <input 
+                    placeholder='Search here'
+                    value='Tenet'
+                    onChange={() => {}}
+                />
+                <img
+                    src={searchIcon}
+                    alt='search'
+                    onClick={() => {}}
+                />
+            </div>
 
-        <h1>App</h1>
+            <div className='container'>
+
+            </div>
+        </div>
 
     );
 }
