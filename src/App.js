@@ -1,7 +1,18 @@
 import React from 'react';
 import { useEffect } from 'react';
+import Movies from './movies';
+import './App.css';
+import searchIcon from './search.svg';
 
 const API_URL = 'http://www.omdbapi.com/?apikey=f3866de6'
+
+const oneMovie ={
+    "Title": "Tenet",
+    "Year": "2020",
+    "imdbID": "tt6723592",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMzU3YWYwNTQtZTdiMC00NjY5LTlmMTMtZDFlYTEyODBjMTk5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg"
+}
 
 const App = () => {
 
@@ -17,8 +28,25 @@ const App = () => {
     }, []);
 
     return (
+        <div className='app'>
+            <h1>Movies</h1>
+            <div className='search'>
+                <input 
+                    placeholder='Search here'
+                    value='Tenet'
+                    onChange={() => {}}
+                />
+                <img
+                    src={searchIcon}
+                    alt='search'
+                    onClick={() => {}}
+                />
+            </div>
 
-        <h1>App</h1>
+            <div className='container'>
+                <Movies oneMovie = {oneMovie} />
+            </div>
+        </div>
 
     );
 }
