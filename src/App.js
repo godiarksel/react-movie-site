@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Movies from './movies';
 import './App.css';
 import searchIcon from './search.svg';
@@ -15,12 +14,13 @@ const oneMovie ={
 }
 
 const App = () => {
+    const [movies, setmovies] = useState([]);
 
     const movieSearch = async (title) => {
         const response = await fetch(`${API_URL}&s=${title}`);
         const data = await response.json();
 
-        console.log(data.Search);
+        setmovies(data.Search);
     }
 
     useEffect(() => {
@@ -43,9 +43,21 @@ const App = () => {
                 />
             </div>
 
-            <div className='container'>
-                <Movies oneMovie = {oneMovie} />
-            </div>
+            {
+                movies.length > 0 ? (
+                    <div className='container'>
+                        <Movies oneMovie = {movies[0]} />
+                    </div>
+                ) : (
+                    <div className='empty'>
+                        <h2>
+                            No movies found.
+                        </h2>
+                    </div>
+                )
+            }
+
+            
         </div>
 
     );
