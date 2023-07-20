@@ -46,7 +46,9 @@ const App = () => {
             {
                 movies.length > 0 ? (
                     <div className='container'>
-                        <Movies oneMovie = {movies[0]} />
+                        {movies.map((movie) => (
+                            <Movies movie= {movie}/>
+                        ))}
                     </div>
                 ) : (
                     <div className='empty'>
