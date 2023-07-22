@@ -16,6 +16,12 @@ const App = () => {
         setmovies(data.Search);
     }
 
+    const enterKeyEvent = (e) => {
+        if(e.key === 'Enter') {
+            movieSearch(search);
+        }
+    };
+
     return (
         <div className='app'>
             <h1>Movies</h1>
@@ -24,6 +30,7 @@ const App = () => {
                     placeholder='Search here'
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
+                    onKeyDown={enterKeyEvent}
                 />
                 <img
                     src={searchIcon}
