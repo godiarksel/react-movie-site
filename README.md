@@ -2,72 +2,56 @@
 
 # Project Name
 
-> Description the project.
+> This is a basic React website that searches and displays movies fetched from IMDB. It uses React state hooks and promises to fetch data from an API.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React Js
+- CSS
 
-## Live Demo (if available)
+  
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Click here](godiarksel.github.io/react-movie-site/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+1. A code editor
+2. GitBash
+3. The latest version of Node js.
 
 ### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+1. Open your GitBash and run the command 'git clone https://github.com/godiarksel/react-movie-site.git'.
+2. Once cloned, to open the directory with the cloned repo,run the command 'cd react-movie-site'.
+3. Run 'code .' to open the project in your default code editor.
+4. Open and inspect the files as you wish.
+5. Open your terminal and run 'npm start' and wait for the project to build and open up.
 
 ## Authors
 
-👤 **Author1**
+👤 **Godfrey Arksel**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@godiarksel](https://github.com/godiarksel)
+- Twitter: [@godiarksel](https://twitter.com/godiarksel)
+- LinkedIn: [Godfrey Mwandembo](https://linkedin.com/in/godfrey-mwandembo-045667127/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/godiarksel/react-movie-site/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+- Javascript Mastery for his descriptive Youtube tutorials.
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
-## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
